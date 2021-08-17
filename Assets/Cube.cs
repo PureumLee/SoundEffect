@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public new AudioSource audio;
+    public AudioClip audioClip;
+    private void OnCollisionEnter(Collision other) 
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        if(other.gameObject.name == "Sphere")
+        {
+            
+        }
         
     }
 }
